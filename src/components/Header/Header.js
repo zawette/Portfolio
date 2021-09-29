@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { FiGithub, FiLinkedin,FiMusic } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMusic } from "react-icons/fi";
 import { FiTerminal } from "react-icons/fi";
 
 import {
@@ -23,6 +23,11 @@ const Header = () => (
       </Link>
     </Div1>
     <Div2>
+      <li>
+        <Link href="/Blog">
+          <NavLink>Blog</NavLink>
+        </Link>
+      </li>
       <li>
         <Link href="#projects">
           <NavLink>Projects</NavLink>

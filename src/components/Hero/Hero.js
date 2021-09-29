@@ -20,7 +20,7 @@ const Hero = (props) => (
               strings: "Zouhair",
               autoStart: true,
               loop: true,
-              pauseFor:2500,
+              pauseFor:3500,
               skipAddStyles:true,
             }}
           />
