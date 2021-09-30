@@ -40,9 +40,7 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: "stuffs0" },
-  { year: 2018, text: "stuffs" },
-  { year: 2019, text: "stuffs2" },
-  { year: 2020, text: "stuffs3" },
-  { year: 2021, text: "stuffs4" },
+  { year: 2014, text: "Enrolled at Ensa engineering school in Morocco" },
+  { year: 2020, text: "graduation and internship" },
+  { year: 2021, text: "-" },
 ];
