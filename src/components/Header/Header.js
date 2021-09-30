@@ -16,7 +16,7 @@ import {
 const Header = () => (
   <Container>
     <Div1>
-      <Link href="/">
+      <Link passHref href="/">
         <NavLink2>
           <FiTerminal size="3rem" /> <span>Zawette</span>
         </NavLink2>
