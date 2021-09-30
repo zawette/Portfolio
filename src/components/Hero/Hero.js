@@ -26,7 +26,7 @@ const Hero = (props) => (
           />
         </SectionTitle>
         <SectionText>
-          Software Engineer experienced in .net and javascript development
+          FullStack WebDev / Software Engineer experienced in .net and javascript development
           living in Rabat, Morocco
         </SectionText>
         <Button onClick={props.handleClick}>Resume / CV</Button>
