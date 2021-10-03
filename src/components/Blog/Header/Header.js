@@ -1,7 +1,13 @@
 import Link from "next/link";
 import React from "react";
 import { FiTerminal, FiGithub, FiLinkedin, FiMusic } from "react-icons/fi";
-import { NavLink,SocialIcons, SocialIconsContainer } from "./HeaderStyles";
+import { SectionDivider } from "../../../styles/GlobalComponents";
+import {
+  Container,
+  NavLink,
+  SocialIcons,
+  SocialIconsContainer,
+} from "./HeaderStyles";
 
 function Header() {
   return (
@@ -22,6 +28,14 @@ function Header() {
           <FiMusic size="3rem" />
         </SocialIcons>
       </SocialIconsContainer>
+      <div
+        style={{ display: "flex", justifyContent: "center", marginTop: "2rem" }}
+      >
+        Blog Posts
+      </div>
+      <Container>
+        <hr style={{width:'75rem',opacity:'0.1'}} />
+      </Container>
     </>
   );
 }

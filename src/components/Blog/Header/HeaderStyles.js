@@ -14,11 +14,15 @@ export const NavLink = styled.a`
   }
 `;
 
-export const SocialIconsContainer = styled.div` 
+export const Container = styled.div`
   display: flex;
   justify-content: center;
-  column-gap:4rem;
   margin-top: 2rem;
+
+`
+
+export const SocialIconsContainer = styled(Container)` 
+  column-gap:4rem;
 `
 
 export const SocialIcons = styled.a`

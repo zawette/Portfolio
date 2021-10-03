@@ -2,6 +2,7 @@
 title: 'Hello World'
 date: '10/2/2021'
 excerpt: 'this is a temp blog post, i will probably delete it later.. or not.'
+tags: [.net,react]
 ---
 
 # Hello World

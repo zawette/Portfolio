@@ -7,6 +7,7 @@ import Post from "../components/Blog/Post/post";
 import { Layout } from "../layout/Blog/Layout";
 
 function Blog(props) {
+    console.log(props);
    return (<>
       <Head>
         <title>FullStack WebDev - Software Enginneer</title>
