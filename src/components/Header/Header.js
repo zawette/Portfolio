@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { FiGithub, FiLinkedin, FiMusic } from "react-icons/fi";
-import { FiTerminal } from "react-icons/fi";
+import { FiTerminal, FiGithub, FiLinkedin, FiMusic } from "react-icons/fi";
 
 import {
   Container,
@@ -24,7 +23,7 @@ const Header = () => (
     </Div1>
     <Div2>
       <li>
-        <Link passHref href="/Blog">
+        <Link passHref href="/blog">
           <NavLink>Blog</NavLink>
         </Link>
       </li>
