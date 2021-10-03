@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   PostContainer,
@@ -18,7 +19,11 @@ function Post({ post, key }) {
           <PostTags key={index}>{tag}</PostTags>
         ))}
       </PostHeader>
-      <PostTitle>{post.frontmatter.title}</PostTitle>
+      <PostTitle>
+        <Link href={`/blog/${post.slug}`}>
+          <a>{post.frontmatter.title}</a>
+        </Link>
+      </PostTitle>
       <PostExcerpt>{post.frontmatter.excerpt}</PostExcerpt>
     </PostContainer>
   );
