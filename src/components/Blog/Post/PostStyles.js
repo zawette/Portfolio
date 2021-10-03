@@ -15,9 +15,13 @@ export const PostHeader = styled.div`
 
 `
 
-export const PostTags = styled.span`
+export const PostTags = styled.a`
+text-decoration: underline;
 margin-right: 1rem;
 font-size: 0.7em;
+&:hover{
+    cursor:pointer;
+}
 `
 export const PostDate = styled.span`
 margin-right: 1rem;
@@ -26,4 +30,8 @@ font-size: 0.7em;
 
 export const PostExcerpt = styled.div`
 font-size: 1em;
+width: 75rem;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
 `
