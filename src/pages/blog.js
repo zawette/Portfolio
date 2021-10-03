@@ -5,6 +5,7 @@ import path from "path";
 import matter from "gray-matter";
 import Post from "../components/Blog/Post/post";
 import { Layout } from "../layout/Blog/Layout";
+import { Container } from "../layout/Blog/LayoutStyles";
 
 function Blog(props) {
     console.log(props);
@@ -13,7 +14,12 @@ function Blog(props) {
         <title>FullStack WebDev - Software Enginneer</title>
       </Head>
       <Layout>
+       <Container>
+       <div>
+       tags and search do not work yet
        <Post></Post> 
+       </div>
+       </Container>
       </Layout>
     </>)
 }

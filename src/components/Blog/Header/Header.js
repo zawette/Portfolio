@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { FiTerminal, FiGithub, FiLinkedin, FiMusic } from "react-icons/fi";
-import { SectionDivider } from "../../../styles/GlobalComponents";
 import {
   Container,
   NavLink,
