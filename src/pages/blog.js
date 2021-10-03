@@ -1,27 +1,29 @@
 import React from "react";
 import fs from "fs";
-import Head from 'next/head'
+import Head from "next/head";
 import path from "path";
 import matter from "gray-matter";
 import Post from "../components/Blog/Post/post";
 import { Layout } from "../layout/Blog/Layout";
 import { Container } from "../layout/Blog/LayoutStyles";
 
-function Blog(props) {
-    console.log(props);
-   return (<>
+function Blog({ posts }) {
+  return (
+    <>
       <Head>
         <title>FullStack WebDev - Software Enginneer</title>
       </Head>
       <Layout>
-       <Container>
-       <div>
-       tags and search do not work yet
-       <Post></Post> 
-       </div>
-       </Container>
+        <Container>
+          <div>
+            {posts.map((post, index) => (
+              <Post post={post} key={index} />
+            ))}
+          </div>
+        </Container>
       </Layout>
-    </>)
+    </>
+  );
 }
 
 export async function getStaticProps() {
