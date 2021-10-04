@@ -28,15 +28,11 @@ function Blog({ posts }) {
 
 export async function getStaticProps() {
   const blogPostsPath = ["public", "blogPosts"];
-  // Get files from the posts dir
   const files = fs.readdirSync(path.join(...blogPostsPath));
 
-  // Get slug and frontmatter from posts
   const posts = files.map((filename) => {
-    // Create slug
     const slug = filename.replace(".md", "");
 
-    // Get frontmatter
     const markdownWithMeta = fs.readFileSync(
       path.join(...blogPostsPath, filename),
       "utf-8"
