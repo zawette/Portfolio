@@ -42,7 +42,7 @@ export default function PostPage({ frontmatter: { date }, slug, content }) {
         <Link passHref href="/blog">
           <PostPreviousBtn>Go Back</PostPreviousBtn>
         </Link>
-        <hr style={{ width: "75rem", opacity: "0.1", margin: "2rem 0" }} />
+        <hr style={{ width: "50%", opacity: "0.1", margin: "2rem 0" }} />
         <div className="post">
           <div className="post-date">Posted on {date}</div>
           <div className="post-body">

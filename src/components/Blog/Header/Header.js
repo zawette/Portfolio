@@ -33,7 +33,7 @@ function Header() {
         Blog Posts
       </div>
       <Container>
-        <hr style={{width:'75rem',opacity:'0.1'}} />
+        <hr style={{width:'50%',opacity:'0.1'}} />
       </Container>
     </>
   );
