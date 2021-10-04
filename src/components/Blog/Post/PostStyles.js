@@ -77,3 +77,10 @@ margin:initial;
 export const StyledHeader1 = styled.h1`
 margin:1.5rem;
 `
+
+export const StyledHeader2 = styled.h2`
+margin:1.5rem;
+`
+export const StyledHeader3 = styled.h2`
+margin:1.5rem;
+`

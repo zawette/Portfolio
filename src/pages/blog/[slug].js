@@ -22,6 +22,19 @@ const CodeBlock = ({ language, value }) => {
   );
 };
 
+const HeadingRenderer = (props)=>{
+  switch(props.level){
+    case 1:
+      return <StyledHeader1>{props.children}</StyledHeader1>;
+    case 2:
+      return <StyledHeader2>{props.children}</StyledHeader2>;
+    case 3:
+      return <StyledHeader3>{props.children}</StyledHeader3>;
+    default: 
+      return <StyledHeader3>{props.children}</StyledHeader3>;
+  }
+}
+
 export default function PostPage({ frontmatter: { date }, slug, content }) {
   return (
     <>
@@ -36,7 +49,7 @@ export default function PostPage({ frontmatter: { date }, slug, content }) {
             <ReactMarkdown
               escapeHtml={false}
               source={content}
-              renderers={{ code: CodeBlock, paragraph:StyledParagraph,heading:StyledHeader1 }}
+              renderers={{ code: CodeBlock, paragraph:StyledParagraph,heading:HeadingRenderer }}
             />
           </div>
         </div>
