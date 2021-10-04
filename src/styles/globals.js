@@ -31,27 +31,6 @@ const GlobalStyles = createGlobalStyle`
   li{
     list-style: none;
   }
-  code {
-    background-color: ${(props) => props.theme.colors.background2};
-    color:  ${(props) => props.theme.colors.primary1};
-    border-radius: 0.3rem;
-    padding: 4px 5px 5px;
-    white-space: nowrap;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-pre code {
-  white-space: inherit;
-}
-
-pre {
-  margin:2rem;
-  background-color: ${(props) => props.theme.colors.background2};
-  padding: 5px;
-  border-radius: 0.3em;
-  // display:inline-block;
-}
 
 
 `;
