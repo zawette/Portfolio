@@ -4,28 +4,41 @@ import matter from "gray-matter";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown/with-html";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { materialOceanic } from 'react-syntax-highlighter/dist/cjs/styles/prism';
-
+import { materialOceanic } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import {
+  GlobalPostCss,
+  PostPreviousBtn,
+  StyledHeader1,
+  StyledHeader2,
+  StyledHeader3,
+  StyledParagraph,
+} from "../../components/Blog/Post/PostStyles";
 
 const CodeBlock = ({ language, value }) => {
-  return <SyntaxHighlighter style={materialOceanic} language={language}>{value}</SyntaxHighlighter>;
+  return (
+    <SyntaxHighlighter style={materialOceanic} language={language}>
+      {value}
+    </SyntaxHighlighter>
+  );
 };
 
 export default function PostPage({ frontmatter: { date }, slug, content }) {
   return (
     <>
-      <Link href="/blog">
-        <a className="btn btn-back">Go Back</a>
-      </Link>
-      <hr style={{ width: "75rem", opacity: "0.1" }} />
-      <div className="post">
-        <div className="post-date">Posted on {date}</div>
-        <div className="post-body">
-          <ReactMarkdown
-            escapeHtml={false}
-            source={content}
-            renderers={{ code: CodeBlock }}
-          />
+      <div css={GlobalPostCss}>
+        <Link passHref href="/blog">
+          <PostPreviousBtn>Go Back</PostPreviousBtn>
+        </Link>
+        <hr style={{ width: "75rem", opacity: "0.1", margin: "2rem 0" }} />
+        <div className="post">
+          <div className="post-date">Posted on {date}</div>
+          <div className="post-body">
+            <ReactMarkdown
+              escapeHtml={false}
+              source={content}
+              renderers={{ code: CodeBlock, paragraph:StyledParagraph,heading:StyledHeader1 }}
+            />
+          </div>
         </div>
       </div>
     </>
