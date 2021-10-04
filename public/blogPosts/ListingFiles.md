@@ -11,7 +11,7 @@ I have a very large collection of music stored locally on my computer, to keep t
 
 ## filtering audio files
 
-I only have mp3 and wav files, so those are the only extension i am interested in.
+I only have mp3 and wav files, so those are the only extensions i am interested in.
 
 ```js
 const fs = require("fs")

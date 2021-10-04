@@ -1,24 +1,29 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import marked from "marked";
 import Link from "next/link";
+import ReactMarkdown from "react-markdown/with-html";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 
-export default function PostPage({
-  frontmatter: { title, date },
-  slug,
-  content,
-}) {
+const CodeBlock = ({ language, value }) => {
+  return <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>;
+};
+
+export default function PostPage({ frontmatter: { date }, slug, content }) {
   return (
     <>
-      <Link href="/">
+      <Link href="/blog">
         <a className="btn btn-back">Go Back</a>
       </Link>
-        <hr style={{width:'75rem',opacity:'0.1'}} />
+      <hr style={{ width: "75rem", opacity: "0.1" }} />
       <div className="post">
         <div className="post-date">Posted on {date}</div>
         <div className="post-body">
-          <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+          <ReactMarkdown
+            escapeHtml={false}
+            source={content}
+            renderers={{ code: CodeBlock }}
+          />
         </div>
       </div>
     </>

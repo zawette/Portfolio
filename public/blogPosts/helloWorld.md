@@ -1,7 +1,7 @@
 ---
 title: "Hello World"
 date: "10/2/2021"
-excerpt: "this is a temp blog post made for testing during development, i will probably delete it later. or not."
+excerpt: "this is a temp blog post made for testing during development, i will probably delete it later... or not."
 tags: [other]
 ---
 
