@@ -4,9 +4,11 @@ import matter from "gray-matter";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown/with-html";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { materialOceanic } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+
 
 const CodeBlock = ({ language, value }) => {
-  return <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>;
+  return <SyntaxHighlighter style={materialOceanic} language={language}>{value}</SyntaxHighlighter>;
 };
 
 export default function PostPage({ frontmatter: { date }, slug, content }) {
