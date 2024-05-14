@@ -23,7 +23,7 @@ function Header() {
         <SocialIcons href="https://www.linkedin.com/in/zouhair-mestour/">
           <FiLinkedin size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://soundcloud.com/zawette">
+        <SocialIcons href="https://open.spotify.com/artist/4HolNaHpQyQ4uvMhjIXZcT">
           <FiMusic size="3rem" />
         </SocialIcons>
       </SocialIconsContainer>

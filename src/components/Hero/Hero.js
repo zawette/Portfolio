@@ -14,10 +14,10 @@ const Hero = (props) => (
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Hello, I'm Mestour <br />
+          Hello, I'm Zouhair <br />
           <Typewriter
             options={{
-              strings: "Zouhair",
+              strings: "Mestour",
               autoStart: true,
               loop: true,
               pauseFor:3500,
@@ -27,7 +27,7 @@ const Hero = (props) => (
         </SectionTitle>
         <SectionText>
           FullStack WebDev / Software Engineer experienced in .net and javascript development
-          living in Rabat, Morocco
+          living in Île-de-France, France
         </SectionText>
         <Button onClick={props.handleClick}>Resume / CV</Button>
       </LeftSection>

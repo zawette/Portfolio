@@ -20,7 +20,7 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel:+212658244837">(+212) 658-244-837</LinkItem>
+          <LinkItem href="tel:+33745699951">(+33) 7 45 69 99 51</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
@@ -40,7 +40,7 @@ const Footer = () => {
       <SocialIcons href="https://www.linkedin.com/in/zouhair-mestour/">
         <FiLinkedin size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://soundcloud.com/zawette">
+      <SocialIcons href="https://open.spotify.com/artist/4HolNaHpQyQ4uvMhjIXZcT">
         <FiMusic size="3rem" />
       </SocialIcons>
         </SocialContainer>
