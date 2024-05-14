@@ -10,7 +10,6 @@ import {
 } from "./PostStyles";
 
 function Post({ post, key }) {
-  console.log(post);
   return (
     <PostContainer key={key}>
       <PostHeader>

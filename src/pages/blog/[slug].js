@@ -12,6 +12,7 @@ import {
   StyledHeader2,
   StyledHeader3,
   StyledParagraph,
+  StyledLink,
 } from "../../components/Blog/Post/PostStyles";
 
 const CodeBlock = ({ language, value }) => {
@@ -19,6 +20,14 @@ const CodeBlock = ({ language, value }) => {
     <SyntaxHighlighter style={materialOceanic} language={language}>
       {value}
     </SyntaxHighlighter>
+  );
+};
+
+const LinkRenderer = ({ href, children }) => {
+  return (
+    <StyledLink href={href} passHref>
+      {children}
+    </StyledLink>
   );
 };
 
@@ -49,7 +58,7 @@ export default function PostPage({ frontmatter: { date }, slug, content }) {
             <ReactMarkdown
               escapeHtml={false}
               source={content}
-              renderers={{ code: CodeBlock, paragraph:StyledParagraph,heading:HeadingRenderer }}
+              renderers={{ code: CodeBlock, paragraph:StyledParagraph,heading:HeadingRenderer, link:LinkRenderer }}
             />
           </div>
         </div>

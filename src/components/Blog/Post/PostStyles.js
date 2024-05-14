@@ -70,6 +70,11 @@ export const PostPreviousBtn = styled.a`
   }
 `;
 
+export const StyledLink = styled.a`
+  color: ${(props) => props.theme.colors.button2};
+  text-decoration: underline;
+`;
+
 export const StyledParagraph = styled.p`
 margin:initial;
 `
